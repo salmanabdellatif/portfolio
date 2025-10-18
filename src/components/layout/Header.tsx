@@ -83,19 +83,19 @@ export default function Header() {
             <Link
               key={index}
               href={link.href}
-              className="text-base font-medium text-secondary-foreground hover:text-primary-foreground transition-all duration-200">
+              className="text-base font-medium text-secondary-foreground hover:text-primary-foreground">
               <span className="text-main-purple">#</span>
               {link.label}
             </Link>
           ))}
-          <div className="flex items-center gap-1 text-base font-semibold text-secondary-foreground hover:text-primary-foreground transition-all duration-200 cursor-pointer">
+          <div className="flex items-center gap-1 text-base font-semibold text-secondary-foreground hover:text-primary-foreground cursor-pointer">
             EN <ChevronDown width={16} height={16} strokeWidth={3} />
           </div>
           {/* theme toggle button for desktop view */}
           <ThemeSwitch isDarkMode={isDarkMode} handleToggleTheme={handleToggleTheme} />
         </div>
         {/* open/colse icon */}
-        <div className="md:hidden text-primary-foreground hover:text-secondary-foreground transition-all duration-200 cursor-pointer">
+        <div className="md:hidden text-primary-foreground hover:text-secondary-foreground cursor-pointer">
           {isMenuOpen ? (
             <X width={24} height={24} onClick={() => setIsMenuOpen(false)} />
           ) : (
@@ -108,7 +108,7 @@ export default function Header() {
         <div className="flex flex-col gap-8 mt-8 px-4">
           {/* theme toggle button for mobile view */}
           <div className="flex justify-between items-center">
-            <div className="flex items-center gap-1 text-3xl font-semibold text-secondary-foreground active:text-primary-foreground transition-all duration-200 cursor-pointer">
+            <div className="flex items-center gap-1 text-3xl font-semibold text-secondary-foreground active:text-primary-foreground cursor-pointer">
               EN <ChevronDown width={16} height={16} strokeWidth={3} />
             </div>
             <ThemeSwitch isDarkMode={isDarkMode} handleToggleTheme={handleToggleTheme} />
@@ -117,7 +117,7 @@ export default function Header() {
             <Link
               key={index}
               href={link.href}
-              className="text-3xl font-medium text-secondary-foreground active:text-primary-foreground transition-all duration-200"
+              className="text-3xl font-medium text-secondary-foreground active:text-primary-foreground"
               onClick={() => setIsMenuOpen(false)}>
               <span className="text-main-purple">#</span>
               {link.label}
@@ -132,19 +132,19 @@ export default function Header() {
           <Link href="#" target="_blank">
             <Github
               strokeWidth={1.5}
-              className="w-[46px] h-[46px] md:w-[24px] md:h-[24px] text-secondary-foreground hover:text-primary-foreground active:text-primary-foreground transition-all duration-200"
+              className="w-[46px] h-[46px] md:w-[24px] md:h-[24px] text-secondary-foreground hover:text-primary-foreground active:text-primary-foreground"
             />
           </Link>
           <Link href="#">
             <Linkedin
               strokeWidth={1.5}
-              className="w-[46px] h-[46px] md:w-[24px] md:h-[24px] text-secondary-foreground hover:text-primary-foreground active:text-primary-foreground transition-all duration-200"
+              className="w-[46px] h-[46px] md:w-[24px] md:h-[24px] text-secondary-foreground hover:text-primary-foreground active:text-primary-foreground"
             />
           </Link>
           <Link href="#">
             <Mail
               strokeWidth={1.5}
-              className="w-[46px] h-[46px] md:w-[24px] md:h-[24px] text-secondary-foreground hover:text-primary-foreground active:text-primary-foreground transition-all duration-200"
+              className="w-[46px] h-[46px] md:w-[24px] md:h-[24px] text-secondary-foreground hover:text-primary-foreground active:text-primary-foreground"
             />
           </Link>
         </div>

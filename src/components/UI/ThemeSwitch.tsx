@@ -10,10 +10,10 @@ export default function ThemeSwitch({ isDarkMode, handleToggleTheme }: ThemeSwit
     <button
       onClick={handleToggleTheme}
       aria-label="Toggle theme"
-      className="relative inline-flex h-8 w-14 p-1 items-center rounded-full transition-colors duration-200 outline outline-main-purple hover:outline-primary-foreground cursor-pointer bg-secondary-background">
+      className="relative inline-flex h-8 w-14 p-1 items-center rounded-full outline outline-main-purple hover:outline-primary-foreground cursor-pointer bg-secondary-background">
       {/* This is the moving "knob" */}
       <div
-        className={`inline-block h-6 w-6 transform rounded-full bg-background shadow-lg transition-transform duration-300 ${
+        className={`inline-block h-6 w-6 transform rounded-full bg-background shadow-lg transition-transform duration-200 ${
           isDarkMode ? "translate-x-6" : "translate-x-0"
         }`}>
         {isDarkMode ? (
