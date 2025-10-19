@@ -2,26 +2,21 @@
 
 :root {
   /* Light Theme */
-  --background: #ffffff;
-  --secondary-background: #ebebeb;
-  --primary-foreground: #171717;
-  --secondary-foreground: #707070;
+  --background: #e8e8e8;
+  --secondary-background: #ffffff;
+  --primary-foreground: #1b1b1b;
+  --secondary-foreground: #6d6d6d;
 }
 
 .dark {
   /* Dark Theme */
   --background: #282c33;
-  --secondary-background: #343a40;
+  --secondary-background: #393f46;
   --primary-foreground: #ffffff;
   --secondary-foreground: #abb2bf;
 }
 
 @theme inline {
-  /* max size for container 1024px */
-  --breakpoint-lg: 64rem; /* 1024px */
-  --breakpoint-xl: 64rem; /* 1024px */
-  --breakpoint-2xl: 64rem; /* 1024px */
-
   /* used colors */
   --color-main-purple: #c778dd;
   --color-main-gray: #abb2bf;
