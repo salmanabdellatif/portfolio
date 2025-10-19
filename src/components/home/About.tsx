@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import MyBtn from "@/components/UI/MyBtn";
-import pp from "@/assets/pp.jpg";
+import pp from "@/assets/pp.png";
 import { appConfig } from "@/data/appConfig";
 
 export default function About() {
@@ -16,7 +16,7 @@ export default function About() {
           alt="profile-pic"
           width={160}
           height={160}
-          className="mx-auto mb-5 md:mb-4 md:ml-4 rounded-full bg-zinc-100 grayscale hover:grayscale-0 md:float-right"
+          className="mx-auto mb-5 md:mb-4 md:ml-4 rounded-full bg-secondary-background grayscale hover:grayscale-0 md:float-right"
         />
       </Link>
       <div className="mx-auto flex-1 text-justify">
