@@ -11,7 +11,7 @@ const fira_code = Fira_Code({
 });
 
 export const metadata: Metadata = {
-  title: "Salman - Software Engineer",
+  title: "Salman | Software Engineer",
   description: "Specializing in React, Next.js, and modern web technologies.",
 };
 
@@ -24,8 +24,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${fira_code.variable} antialiased`}>
         <ThemeScript />
-        <Header />
-        {children}
+        <div className="max-w-2xl mx-auto px-4">
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );
