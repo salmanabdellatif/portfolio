@@ -16,7 +16,7 @@ export default function About() {
           alt="profile-pic"
           width={160}
           height={160}
-          className="mx-auto mb-5 md:mb-4 md:ml-4 rounded-full bg-secondary-background grayscale hover:grayscale-0 md:float-right"
+          className="mx-auto mb-5 md:mb-4 md:ml-4 rounded-full bg-secondary-background grayscale md:float-right"
         />
       </Link>
       <div className="mx-auto flex-1 text-justify">
